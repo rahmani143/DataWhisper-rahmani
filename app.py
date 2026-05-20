@@ -6,7 +6,7 @@ import streamlit as st
 st.cache_data.clear()
 st.cache_resource.clear()
 
-st.title("DataWhisper")
+
 
 # Import custom modules
 from src.data_loader import load_data, get_dataframe_info, get_data_preview
@@ -43,6 +43,8 @@ st.set_page_config(
     page_icon="📊", 
     initial_sidebar_state="expanded"
 )
+st.title("DataWhisper")
+
 
 def load_css():
     """Loads external CSS for SaaS styling."""
